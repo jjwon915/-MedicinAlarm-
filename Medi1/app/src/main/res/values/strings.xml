@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Medi1</string>
+    <string name="channel_description">DDingDDing push notification</string>
+    <string name="channel_name">ddingdding</string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="100dp"
+    android:layout_margin="5dp"
+    android:background="#ffffff">
+
+    <LinearLayout
+        android:id="@+id/ll_rv_item_list_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/txt_rv_item_list_mediName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="mediName"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center_horizontal">
+
+            <RelativeLayout
+                android:id="@+id/rl_rv_item_list"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/txt_rv_item_list_startDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/etc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/txt_rv_item_list_startDate"
+                    android:layout_marginLeft="5dp"
+                    android:text="~"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/txt_rv_item_list_endDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/etc"
+                    android:layout_marginLeft="5dp"
+                    android:text="00"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/rl_rv_item_list"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/etc2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="하루"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/txt_rv_item_list_timesPerDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/etc2"
+                    android:layout_marginLeft="5dp"
+                    android:text="0"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/txt_rv_item_list_timesPerDay"
+                    android:text="번"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/lay1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#90caf9">
+
+            <ImageView
+                android:id="@+id/btn_go_setting"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:gravity="center"
+                android:src="@drawable/btn_go_setting"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
